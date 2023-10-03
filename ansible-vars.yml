@@ -1,0 +1,12 @@
+# specifing the CIRD for our cluster to use
+# can be basically any private range except fot ranges already in use
+# You can quickly run out of /24 addresses so this will use /22
+
+pod_cidr: "10.98.1.0/22"
+
+# this defines what the join command file ame will be
+join_command_location: "join_command.out"
+
+# this sets the home directory for retrieving, saving, and executing files
+home_dir: '/home/ubuntu'
+
